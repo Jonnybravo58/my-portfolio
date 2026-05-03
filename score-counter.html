@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding Progress Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="score-styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Jonathan</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tracker-section">
+
+            <h2>Coding Progress Tracker 🎯</h2>
+            <p class="subtitle">Track every win on your journey to Frontend Developer</p>
+
+            <!-- Score Display -->
+             <div class="score-display">
+                <span class="score-label">Total XP</span>
+                <span id="total-score">0</span>
+                <span class="score-label">points</span>
+             </div>
+
+             <!-- Level Display -->
+              <div id="level-display" class="level-display">
+                   🌱 Just Getting Started
+              </div>
+
+              <!-- Action Buttons -->
+               <div class="actions-grid">
+                   <span class="action-icon">📚</span>
+                   <h3>Completed Lessons</h3>
+                   <p>+10 XP</p>
+                   <button class="action-btn" data-points="10" data-action="Completed a lesson">
+                       +10 XP
+                   </button>
+               </div>
+
+               <div class="action-card">
+                   <span class="action-icon">🏗️</span>
+                   <h3>Built a Project</h3>
+                   <p>+50 XP</p>
+                   <button class="action-btn" data-points="50" data-action="Built a project">
+                       +50 XP
+                   </button>
+                </div>
+                
+                <div class="action-card">
+                    <span class="action-icon">🐛</span>
+                    <h3>Fixed a Bug</h3>
+                    <p>+20 XP</p>
+                    <button class="action-btn" data-points="20" data-action="Fixed a bug">
+                        +20 XP
+                    </button>
+                </div>
+
+                <div class="action-card">
+                    <span class="action-icon">📖</span>
+                    <h3>Study Session</h3>
+                    <p>+15 XP</p>
+                    <button class="action-btn" data-points="15" data-action="Completed a study session">
+                        +15 XP
+                    </button>
+                </div>
+
+                <div class="action-card">
+                    <span class="action-icon">🔥</span>
+                    <h3>Daily Streak</h3>
+                    <p>+25 XP</p>
+                    <button class="action-btn" data-points="25" data-action="Kept the daily streak">
+                        +25 XP
+                    </button>
+                </div>
+
+                <div class="action-card">
+                    <span class="action-icon">🚀</span>
+                    <h3>Deployed Project</h3>
+                    <p>+100 XP</p>
+                    <button class="action-btn" data-points="100" data-action="Deployed a project">
+                        +100 XP
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Activity Log -->
+             <div class="log-section">
+                <h3>Activity Log 📋</h3>
+                <div id="activity-log">
+                    <p class="log-empty">Your activities will appear here...</p>
+                </div>
+             </div>
+
+             <!-- Reset Button -->
+              <button id="reset-btn">Reset Progess 🔄</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Jonathan • 2026 • Chicago → Florida 📍</p>
+    </footer>
+
+    <script src="score-script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+/* ================================
+   BASE STYLES
+================================ */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f0f1a;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    background: linear-gradient(180deg, #1a1a2e, #0f3460);
+    color: white;
+    padding: 32px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #6ee7b7;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #6ee7b7;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(110, 231, 183, 0.1);
+}
+
+/* ================================
+   QUOTE SECTION
+================================ */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 40px 20px;
+}
+
+.quote-section {
+    width: 100%;
+    max-width: 700px;
+    border: none;
+    background: none;
+}
+
+.quote-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(110, 231, 183, 0.2);
+    border-radius: 16px;
+    padding: 48px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.quote-card:hover {
+    border-color: #6ee7b7;
+    background: rgba(110, 231, 183, 0.03s);
+}
+
+.quote-icon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+#quote-text {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin-bottom: 24px;
+    font-style: italic;
+    transition: opacity 0.3s ease;
+}
+
+#quote-author {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6ee7b7;
+    margin-bottom: 32px;
+    letter-spacing: 0.5px;
+    transition: opacity 0.3s ease;
+}
+
+/* ================================
+   BUTTON
+================================ */
+
+button {
+    background-color: #6ee7b7;
+    color: #0f0f1a;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    letter-spacing: 0.5px;
+}
+
+button:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #1a1a2e;
+    color: #6ee7b7;
+    text-align: center;
+    padding: 24px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ================================
+   FADE ANIMATION
+================================ */
+
+.fade-out {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 12px;
+    }
+
+    .quote-card {
+        padding: 32px 24px;
+    }
+
+    #quote-text {
+        font-size: 18px;
+    }
+}

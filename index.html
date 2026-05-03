@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jonathan - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>This is Me</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <button id="theme-toggle">☀️ Light Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section">
+          <img src="images/image.jpeg" alt="A photo of me" width="200">
+          <div class="intro-text">
+            <h2 id="greeting">Hi, I'm Jonathan 👋</h2>
+            <p>📍 Chicago → Florida</p>
+            <p>I'm a frontend developer in training, building my skills one day at a time. I'm motivated by my daughter and driven by the life God has planned for us.</p>
+            <p>🎯 Goal: Frontend Developer by late 2026</p>
+            <p>🔥 Learning every day</p>
+            <button id="hello-btn">Say Hello 👋</button> 
+          </div>
+        </section>
+
+        <section>
+            <h2>What I'm learning</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills & Tools 🧰</h2>
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <span class="skill-icon">🌐</span>
+                    <h3>HTML5</h3>
+                    <p>Semantic structure, accessibility, clean markup</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🎨</span>
+                    <h3>CSS3</h3>
+                    <p>Flexbox, Grid, animations, custom styling</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">⚡</span>
+                    <h3>JavaScript</h3>
+                    <p>Coming soon - currently in training 🔥</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">📱</span>
+                    <h3>Responsive Design</h3>
+                    <p>Building for all screen sizes</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🛠️</span>
+                    <h3>VS Code</h3>
+                    <p>Daily driver - extensions, shortcuts, Live Server</p>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🚀</span>
+                    <h3>Git & GitHub</h3>
+                    <p>Coming soon - Phase 3</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects 🚀</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive 2-page portfolio website built from scratch with HTML, CSS, Flexbox and Grid.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Flexbox</span>
+                        <span class="tag">Grid</span>
+                    </div>          
+                </div>
+
+                <div class="project-card">
+                    <h3>More Coming Soon 🔥 </h3>
+                    <p>Currently learning JavaScript - next project will be interactive and dynamic.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Coming Soon</span>
+                    </div>    
+                </div>
+
+                <div class="project-card">
+                    <h3>Progress Tracker 🎯</h3>
+                    <p>A gamified coding progress tracker with XP points, levels and activity log built with JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">DOM</span>
+                    </div>
+                    <a href="score-counter.html" style="color: #6ee7b7; font-weight: 600; text-decoration: none; display: block; margin-top: 12px;">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Weather App 🌤️</h3>
+                    <p>A real time weather app pulling live data from OpenWeather API using Fetch and async/await.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Fetch API</span>
+                        <span class="tag">Async/Await</span>
+                    </div>
+                    <a href="weather-app.html" style="color: #6ee7b7; font-weight: 600; text-decoration: none; display: block; margin-top: 12px;">View Project →</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Quote Generator ✨</h3>
+                    <p>A random motivational quote generator with smooth fade animations built with vanilla JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">DOM</span>
+                    </div>
+                    <a href="quote-generator.html" style="color: #6ee7b7; font-weight: 600; text-decoration: none; display: block; margin-top: 12px;">View Project →</a>
+                    </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>My Skills in JS 💚</h2>
+            <div id="skills-list"></div>
+        </section>
+
+        <section>
+            <h2>Skills Progress 📊</h2>
+            <div id="skills-progress"></div>
+        </section>
+
+        <section>
+            <h2>Say Something 💬</h2>
+            <input type="text" id="user-input" placeholder="Type your name...">
+            <button id="greet-btn">Greet Me!</button>
+            <p id="greet-output"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built by Jonathan • 2026 • Chicago → Florida 📍</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

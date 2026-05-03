@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jonathan - About Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Jonathan</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <button id="theme-toggle">☀️ Light Mode</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro-section">
+            <img src="images/me&mybud.jpeg" alt="A photo of me" width="200">
+            <div class="intro-text">
+                <h2>Who I Am</h2>
+                <p>I'm from Chicago, born and raised. Lived half my life in Florida where I learned alot about myself and really fell in love with the carshow lifestyle. Currently I work a grocery job locally, I find it helpful and nice to be there for people in that way. Now I am trying to learn web development to change me and my family's lives. Help people in a more broader sense. I'm motivated and determined to succeed in this life and give all thanks to God.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Love to travel</li>
+                <li>Play games</li>
+                <li>Work on cars and go to car shows</li>
+            </ul>
+            <img src="images/dream-car-AMG.jpg" alt="Dream Car" class="dream-car">
+        </section>
+
+        <section>
+            <h2>Why I'm Learning to Code</h2>
+            <p>I'm learning to code because I want to do something creative in this world. Change my family's dynamic
+                and be something financially as well. I do this for my daughter and the life God has pictured for all of
+                us I feel blessed always. 🙏</p>
+        </section>
+
+        <section>
+            <h2>What I'm Building 🛠️</h2>
+            <ul>
+                <li>Personal Portfolio Website - HTML, CSS, Flexbox</li>
+                <li>About Me Page - Semantic HTML & custom styling</li>
+                <li>More coming soon... 🔥</li>      
+            </ul>
+        </section>
+
+        <section>
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://www.theodinproject.com" target="_blank">The Odin Project</a></li>
+                <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+                <li><a href="index.html">Back to Home</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Built by Jonathan • 2026 • Chicago → Florida 📍</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light") {
+            document.body.classList.add("light-mode");
+            themeToggle.textContent = "🌙 Dark Mode";
+        }
+
+        themeToggle.addEventListener("click", function() {
+            document.body.classList.toggle("light-mode");
+
+            const isLight = document.body.classList.contains("light-mode");
+
+            if (isLight) {
+                themeToggle.textContent = "🌙 Dark Mode";
+                localStorage.setItem("theme", "light");
+            } else {
+                themeToggle.textContent = "☀️ Light Mode";
+                localStorage.setItem("theme", "dark");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather App</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="weather-styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Jonathan</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="weather-section">
+
+            <h2>Weather App 🌤️</h2>
+            <p class="subtitle">Real time weather powered by OpenWeather API</p>
+
+            <!-- Search -->
+             <div class="search-container">
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Enter a city... e.g. Chicago"
+                >
+                <button id="search-btn">Search 🔍</button>
+             </div>
+
+             <!-- Loading state -->
+              <div id="loading" class="loading hidden">
+                   <p>Fetching weather data... ⏳</p>
+              </div>
+
+              <!-- Error state -->
+               <div id="error" class="error hidden">
+                   <p id="error-message">City not found. Please try again.</p> 
+               </div>
+
+               <!-- Weather display -->
+                <div id="weather-card" class="weather-card hidden">
+
+                    <div class="weather-header">
+                        <h3 id="city-name">City Name</h3>
+                        <p id="weather-date">Date</p>
+                    </div>
+
+                    <div class="weather-main">
+                        <div class="temp-container">
+                            <span id="temperature">--</span>
+                            <span class="temp-unit">°F</span>
+                        </div>
+                        <p id="weather-description">Description</p>
+                    </div>
+
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">💧</span>
+                            <span class="detail-label">Humidity</span>
+                            <span id="humidity" class="detail-value">--%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💨</span>
+                            <span class="detail-label">Wind</span>
+                            <span id="wind-speed" class="detail-value">-- mph</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🌡️</span>
+                            <span class="detail-label">Feels Like</span>
+                            <span id="feels-like" class="detail-value">--°F</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Recent searches -->
+                 <div id="recent-searches" class="recent-searches">
+                    <h3>Recent Searches 🕐</h3>
+                    <div id="search-tags"></div>
+                 </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Built by Jonathan • 2026 • Chicago → Florida 📍</p>
+    </footer>
+
+    <script src="weather-script.js"></script>
+</body>
+
+</html>
